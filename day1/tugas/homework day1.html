@@ -1,0 +1,19 @@
+<html>
+  <script>
+    let nama = prompt("Masukkan nama Anda: ");
+    let yearNow = new Date();
+    yearNow = yearNow.getFullYear();
+    let birthYear = prompt("Masukkan tahun kelahiran Anda: ");
+    let usia = parseInt(yearNow) - parseInt(birthYear);
+    let baju = prompt("Masukkan warna baju Anda: ");
+    let bio =
+      "Nama saya " +
+      nama +
+      "\nUsia saya " +
+      usia +
+      "\nMenggunakan baju warna " +
+      baju;
+    console.log(bio);
+    alert(bio);
+  </script>
+</html>

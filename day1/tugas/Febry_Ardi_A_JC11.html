@@ -1,0 +1,17 @@
+<html>
+    <script>
+        //declarasi inputan object
+        let nama = prompt('Input nama anda: ')
+        let usia = prompt('Input tahun kelahiran untuk mengetahui usia: ')
+        let baju = prompt('Input warna baju anda: ')
+
+        //get current date (--> year)
+        let date = new Date().getFullYear()
+
+        usia     = date - parseInt(usia)//untuk declarasi usia
+
+        //menampilkan hasil inputan pada alert
+        alert('Nama anda adalah '+nama+'\n Usia anda adalah '+usia+'\n Warna baju anda adalah '+baju)
+        console.log('Nama anda adalah '+nama+'\n Usia anda adalah '+usia+'\n Warna baju anda adalah '+baju)
+    </script>
+</html>

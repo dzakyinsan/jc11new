@@ -1,0 +1,90 @@
+<script>
+    // do {
+    //     var konfirmasi=true
+    //     var hargasatuan=0
+    //     var belanja=prompt('mau belanja apa?\n1.anggur Rp.5000\n2.apel Rp.10000\n3.nanas Rp.2000\n4.durian Rp.30000')
+    //     if(belanja==1){
+    //         hargasatuan=5000
+    //         var berat=parseInt(prompt('mau beli berapa'))
+    //         alert('anda harus bayar '+(hargasatuan*berat))
+    //         konfirmasi=false
+    //     }else if(belanja==2){
+    //         hargasatuan=10000
+    //         var berat=parseInt(prompt('mau beli berapa'))
+    //         alert('anda harus bayar '+(hargasatuan*berat))
+    //         konfirmasi=false
+            
+    //     }else if(belanja==3){
+    //         hargasatuan==2000
+    //         var berat=parseInt(prompt('mau beli berapa'))
+    //         alert('anda harus bayar '+(hargasatuan*berat))
+    //         konfirmasi=false
+    //     }else if(belanja==4){
+    //         hargasatuan=30000
+    //         var berat=parseInt(prompt('mau beli berapa'))
+    //         alert('anda harus bayar '+(hargasatuan*berat))
+    //         konfirmasi=false
+    //     }else{
+    //         alert('anda salah input')
+    //         konfirmasi=confirm('anda mau belanja atau tidak?')
+    //         if(konfirmasi){
+    //             alert('ayo belanja')
+    //         }else{
+    //             alert('anda miskin')
+    //         }
+    //     }
+    // } while (konfirmasi);
+var konfirmasi=true
+while(konfirmasi==true){
+    var hargasatuan=0
+    var belanja=prompt('mau belanja apa?\n1.anggur Rp.5000\n2.apel Rp.10000\n3.nanas Rp.2000\n4.durian Rp.30000')
+    if(belanja){
+        if(belanja==1){
+            hargasatuan=5000
+            var berat=parseInt(prompt('mau beli berapa'))
+            alert('anda harus bayar '+(hargasatuan*berat))
+        }else if(belanja==2){
+            hargasatuan=10000
+            var berat=parseInt(prompt('mau beli berapa'))
+            alert('anda harus bayar '+(hargasatuan*berat))
+            konfirmasi=false
+        }else if(belanja==3){
+            hargasatuan=2000
+            var berat=parseInt(prompt('mau beli berapa'))
+            alert('anda harus bayar '+(hargasatuan*berat))
+            konfirmasi=false
+        }else if(belanja==4){
+            hargasatuan=30000
+            var berat=parseInt(prompt('mau beli berapa'))
+            alert('anda harus bayar '+(hargasatuan*berat))
+            konfirmasi=false
+        }
+        konfirmasi=confirm('anda mau belanja lagi')
+
+    }else{
+        alert('anda salah input')
+        konfirmasi=confirm('anda mau belanja atau tidak?')
+        console.log(konfirmasi)
+        if(konfirmasi){
+            alert('ayo belanja')
+        }else{
+            alert('anda miskin')
+        }
+    }
+    // else{
+    //     alert('anda salah input')
+    //     konfirmasi=confirm('anda mau belanja atau tidak?')
+    //     console.log(konfirmasi)
+    //     if(konfirmasi){
+    //         alert('ayo belanja')
+    //     }else{
+    //         alert('anda miskin')
+    //     }
+    // }
+}
+
+
+// var berat=parseInt(prompt('mau beli berapa'))
+// alert('anda harus bayar '+(hargasatuan*berat))
+
+</script>
