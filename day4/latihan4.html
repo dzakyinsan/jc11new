@@ -1,0 +1,38 @@
+<script>
+    alert('selamat datang di website unyuu kami')
+    while (true) {
+        var menuutama=prompt('Menu:\n1.Belajar\n2.belanja\n3.Exit')
+        if(menuutama==1){
+            var konfirmasi1=true
+            while (konfirmasi1) {
+                var menubelajar=prompt('Belajar apa:\n1.Luas Segitiga\n2.Luas Persegi\n3.Volume Balok')
+                if(menubelajar==1){
+                    var alassegitiga=parseInt(prompt('Masukkan Panjang Alas'))
+                    var tinggisegitiga=parseInt(prompt('masukkan tinggi'))
+                    alert('luas segitiga adalah'+(0.5*alassegitiga*tinggisegitiga)+' cm^2')
+                }else if(menubelajar==2){
+                    var sisi=parseInt(prompt('masukkan sisi yang kamu suka'))
+                    alert('luas Persegi adalah '+ (sisi*sisi)+'cm^2')
+                }else if(menubelajar==3){
+                    var panjang=parseInt(prompt('masukkan panjang balok'))
+                    var lebar=parseInt(prompt('masukkan lebar'))
+                    var tinggi=parseInt(prompt('masukkan tinggi'))
+                    alert('Volume Balok adalah '+(panjang*lebar*tinggi))
+                }
+                konfirmasi1=confirm('pengen belajar lagi nggak?')
+            }
+        }else if(menuutama==2){
+            alert('feature belum tersedia ')
+        }else if(menuutama==3){
+            alert('terima kasih telah mengunjungi website kami')
+            break
+        }
+    }
+
+
+
+
+
+
+
+</script>

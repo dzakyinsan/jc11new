@@ -1,7 +1,21 @@
-var a=NaN
+// while(konfirmasi){
+//     var konfirmasi=true
+//     console.log(1)
+// }
+// do {
+//     var konfirmasi=true
+//     console.log(1)
+// } while (konfirmasi);
 
-if(a){
-    console.log('berhasil')
-}else{
-    console.log('gagal')
+
+// while (angka<=2) {
+//     angka++
+//     angka=1
+//     console.log(angka)
+// }
+
+var angka=2
+while(angka==2){
+    angka+=3
 }
+console.log(angka)
