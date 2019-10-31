@@ -1,5 +1,6 @@
-// gaji hitungparkir operator functions
-// gaji karyawan gaji(jammasuk,jamkeluar,posisi)
+//1. buat timer angka jika angka 0 maka timer berhenti maka timer berhenti
+
+//2. buat factorial
 
 
 
@@ -18,12 +19,37 @@
 
 
 
-// for(i=0;i<5;i++){
-//     if(i==3){
-//         continue
-//     }
-//     console.log(i)
+
+
+
+
+
+//sum angka di array
+
+
+//function untuk cek huruf yang sama pada array dan return huruf tersebut
+
+//jumlahin angka yang tipenya string
+
+//buat function dengan 2 parameter,  parameter pertama adalah yang akan digantikan parameter kedua adalah value yang akan digantikan
+//jika paramaeter pertama tidak ada di array maka akan return string 'data tidak ditemukan
+
+
+//pencarian sederhana didalam arrray 
+
+//pencarian huruf yang sama walaupun dimasukkin huruf kecil dan besar sama saja
+
+
+
+
+
+// var a=[1,2,3]
+// if(a.indexOf(1)==-1){
+//     console.log('sini')
+// }else{
+//     console.log('sana')
 // }
+// console.log(a.indexOf(1))
 
 
 
@@ -33,14 +59,14 @@
 
 
 
-// var numb=5
-// for(a=0;a<4;a++){
-//     numb=1000
-//     for(b=0;b<4;b++){
-//         numb=5
-//         for(c=0;c<4;c++){
-//             numb=10
-//         }
-//     }
+
+
+
+//
+// function sekarang(hari,bulan){
+//     var day=['minggu','senin','selasa','rabu','kamis','jumat','sabtu']
+//     var month=['januari','februari','maret','april','mei','juni','juli','agustus','september','oktober','november','desember']
+//     return day[hari]+','+month[bulan-1]
 // }
-// console.log(numb)
+// a=new Date()
+// console.log(a.getDay())

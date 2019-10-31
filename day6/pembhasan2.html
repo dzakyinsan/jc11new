@@ -1,0 +1,123 @@
+<script>
+    function segitigabesar(tinggi){
+        let z=''
+        for(a=0;a<tinggi;a++){
+            for(b=a;b<tinggi-1;b++){
+                z+=' '
+            }
+            for(c=0;c<=a;c++){
+                z+='*'
+            }
+            for(d=0;d<=a-1;d++){
+                z+='*'
+            }
+            if(a<tinggi-1){
+                z+='\n'
+            }
+        }
+        return z
+    }
+    function segitagabesarterbalik(tinggi){
+        let z=''
+
+        for(let a=0;a<tinggi;a++){
+            for(let b=0;b<a;b++){
+                z+=' '
+            }
+            for(let c=a;c<tinggi;c++){
+                z+='*'
+            }
+            for(let d=a+1;d<tinggi;d++){
+                z+='*'
+            }
+            if(a<tinggi-1){
+                z+='\n'
+            }
+        }
+        return z
+    }
+    function segitigasiku2bawah(tinggi){
+        let output=''
+        for(i=0;i<tinggi;i++){
+            for(j=0;j<=i;j++){
+                output+='*'
+            }
+            output+='\n'
+        }
+        return output
+    }
+    function segitigasiku2atas(tinggi){
+        let z=''
+        for(let i =0;i<tinggi;i++){
+            for(let j=i;j<tinggi;j++){
+                z+='*'
+            }    
+            if(i<=tinggi){
+                z+='\n'
+            }
+            
+        }
+        return z
+    }
+    // alert(segitigasiku2bawah(3))
+    alert('selamat datang di website unyuu kami')
+    while (true) {
+        var menuutama=prompt('Menu:\n1.Belajar\n2.belanja\n3.Segitiga bintang\n4.Exit')
+        if(menuutama==1){
+            var konfirmasi1=true
+            while (konfirmasi1) {
+                var menubelajar=prompt('Belajar apa:\n1.Luas Segitiga\n2.Luas Persegi\n3.Volume Balok')
+                if(menubelajar==1){
+                    var alassegitiga=parseInt(prompt('Masukkan Panjang Alas'))
+                    var tinggisegitiga=parseInt(prompt('masukkan tinggi'))
+                    alert('luas segitiga adalah'+(0.5*alassegitiga*tinggisegitiga)+' cm^2')
+                }else if(menubelajar==2){
+                    var sisi=parseInt(prompt('masukkan sisi yang kamu suka'))
+                    alert('luas Persegi adalah '+ (sisi*sisi)+'cm^2')
+                }else if(menubelajar==3){
+                    var panjang=parseInt(prompt('masukkan panjang balok'))
+                    var lebar=parseInt(prompt('masukkan lebar'))
+                    var tinggi=parseInt(prompt('masukkan tinggi'))
+                    alert('Volume Balok adalah '+(panjang*lebar*tinggi))
+                }
+                konfirmasi1=confirm('pengen belajar lagi nggak?')
+            }
+        }else if(menuutama==2){
+            var 
+        }else if(menuutama==3){
+            do {
+                var bintangsegitiga=prompt('pilih segitiga apa ?\n1.siku2\n2.segitiga sama kaki')
+                if(bintangsegitiga==1){
+                    var siku2=prompt('1.atas\n2.bawah ?')
+                    var tinggisiku21=prompt('berapa tingginya')
+                    if(siku2==1){
+                        alert(segitigasiku2atas(tinggisiku21))
+                    }else{
+                        alert(segitigasiku2bawah(tinggisiku21))
+                    }
+                }else if(bintangsegitiga==2){
+                    var samakaki1=prompt('1.atas\n2.bawah ?')
+                    var tinggisamakaki1=prompt('berapa tingginya')
+                    if(samakaki1==1){
+                        alert(segitagabesarterbalik(tinggisamakaki1))
+                    }else{
+                        alert(segitigabesar(tinggisamakaki1))
+                    }
+                }
+                var konfirmasi2=confirm('mau lagi segitiga bintang')
+            } while (konfirmasi2);
+        }else if(menuutama==4){
+            alert('terima kasih telah mengunjungi website kami')
+            break
+        }else{
+            alert('salah input di menu utama')
+        }
+    }
+
+
+
+
+
+
+
+</script>
