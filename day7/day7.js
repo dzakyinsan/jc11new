@@ -47,11 +47,11 @@
 // }
 // console.log(faktorial(9))
 
-let mobil = ['Alya','Xenia','Avanza','Altis','1222','@@@'];
+// let mobil = ['Alya','Xenia','Avanza','Altis','1222','@@@'];
 function pencarianmobil(a){
 
 }
-console(pencarianmobil('honda'))
+// console(pencarianmobil('honda'))
 // console.log(mobil)
 // console.log(mobil.toString())
 // console.log(mobil.join(' '))
@@ -78,16 +78,35 @@ console(pencarianmobil('honda'))
 // console.log(arr[0][0][1])
 
 var nama='https://www.mentimeter.com/s/48177aa86d842d7e95fa01f7b59df084/ed0bae0de0e8'
-console.log(nama.split('.')[1])
+// console.log(nama.split('.')[1])
 
 function sum(a){
     var output=0
     for(i=0;i<a.length;i++){
         output+=a[i]
     }
+    return output/a.length
+}
+// console.log(sum([5,5,5,10]))
+function sumstring(a){
+    var newarr=a.split('')
+    var output=0
+    for(i=0;i<newarr.length;i++){
+        output+=parseInt(newarr[i]) 
+    }
     return output
 }
-console.log(sum([1,2,3,4]))
-console.log(sum('1234'))
+
+// console.log(sumstring('12343244212312'))
 //sum 
+let mobil = ['Alya','Xenia','Avanza','Altis','1222','@@@']
+function checknama(bambang){
+    for(let zaky=0;zaky<mobil.length;zaky++){
+        if(mobil[zaky].toLowerCase()==bambang.toLowerCase()){
+            return true
+        }
+    }
+    return false
+}
+console.log(checknama('avanza'))
 

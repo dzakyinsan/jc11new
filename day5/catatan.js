@@ -44,12 +44,23 @@
 
 
 // var a=[1,2,3]
-// if(a.indexOf(1)==-1){
+// if(a.indexOf(2)==-1){
 //     console.log('sini')
 // }else{
 //     console.log('sana')
 // }
+
 // console.log(a.indexOf(1))
+
+
+
+function newarr(){
+    return ['a',1,2,3]
+}
+console.log()
+
+
+
 
 
 
