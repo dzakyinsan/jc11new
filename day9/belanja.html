@@ -1,0 +1,57 @@
+<script>
+var produk=['anggur','apel','jeruk']
+var harga=[1000,20000,5000]
+function printProd(a){
+    var output=''
+    for(var i=0;i<a.length;i++){
+        output+=(i+1)+' '+produk[i].toUpperCase()+' Rp.'+harga[i]+',00 \n'
+    }
+    return output
+}
+alert(printProd(produk))
+do {
+    var menuutama=prompt('1.user\n2.admin\n3.Exit')
+    if(menuutama==1){
+
+    }else if(menuutama==2){
+        do {
+            var menuadmin=prompt('1.Tambah data\n2.Update data\n3.Hapus data\n4.kembali ke menu utama')
+            if(menuadmin==1){
+                do {
+                    var newprod=prompt('masukkan produk baru kaka')
+                    var newprice=parseInt(prompt('masukkan harga baru kakak')) 
+                    produk.push(newprod)
+                    harga.push(newprice)
+                    alert(printProd(produk))
+                    var konfirmasi1=confirm('mau ulang lagi nggak kaka')
+                } while (konfirmasi1);  
+            }else if(menuadmin==2){
+                do {
+                    alert(printProd(produk))
+                    var pilihan=parseInt(prompt(printProd(produk))+'\nPilih produk ') 
+                    var updateprod=prompt('masukkan nama product untuk menggantikan '+produk[pilihan-1])
+                    var updateconfirm=confirm('yakin nggak mengganti produk dengan nama '+produk[pilihan-1]+' dengan '+updateprod)
+                    if(updateconfirm){
+                        produk.splice(pilihan-1,1,updateprod)
+                        alert(printProd(produk))
+                    }else{
+                        alert('tidak jadi update')
+                    }
+                    var konfirmasi2=confirm('mau ulang update lagi nggak kaka')
+                } while (konfirmasi2);
+            }else if(menuadmin==3){
+    
+            }else{
+                break
+            }
+        } while (true);
+    }else{
+        alert('selamat tinggal semoga kembali lagi')
+        break
+    }
+} while (true);
+
+
+
+
+</script>
