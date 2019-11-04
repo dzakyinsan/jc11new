@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function fungsiKu() {
+                let input1 = document.getElementById("terserah").value;
+                let inputusia=document.getElementById('usia').value
+                document.getElementById("tes").innerHTML = `nama saya ${input1} 
+                                                            dan usia saya ${inputusia}`;
+                document.getElementById('usia').value=null
+                document.getElementById('terserah').value=''
+            }
+        </script>
+        <title>belajar dom</title>
+    </head>
+    <body>
+        Nama: <input id='terserah' name="" type="text" placeholder="tulis nama disini"/>
+            <br>
+        Usia:<input id='usia' type="number" placeholder="masukkan usia"/>
+        <br>
+        <button onclick="fungsiKu()"> Coba klik! </button>
+        <p id="tes"> Hasil </p>
+    </body>
+</html>
