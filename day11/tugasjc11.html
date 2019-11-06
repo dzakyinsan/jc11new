@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Name:<input type="text" id="nama" placeholder="masukkan nama"/>
+    <br>
+    age:<input type="number" id="usia" placeholder="masukkan usia"/>
+    <br> <input type="radio" name='sex' value="Pria"/> Pria
+    <input type="radio" name="sex" value="Wanita">Wanita
+    <br>
+    <button onclick="hasil()">klik sini</button>
+    <p></p>
+</body>
+<script>
+const hasil=()=>{
+    var nama=document.getElementById('nama').value 
+    var usia=document.getElementById('usia').value
+    var kelamin=''
+    
+    if(document.getElementsByName('sex')[0].checked){
+        kelamin=document.getElementsByName('sex')[0].value
+    }else if(document.getElementsByName('sex')[1].checked){
+        kelamin=document.getElementsByName('sex')[1].value
+    }
+    document.querySelector('p').innerHTML=`nama saaya ${nama} usia ${usia} ${kelamin}`
+}
+
+
+</script>
+</html>
